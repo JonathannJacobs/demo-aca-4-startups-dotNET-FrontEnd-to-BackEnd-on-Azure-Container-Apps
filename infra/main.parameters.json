@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "environmentName": {
-            "value": "${AZURE_ENV_NAME}"
+            "value": "${ENV_NAME}"
         },
         "location": {
-            "value": "${AZURE_LOCATION}"
+            "value": "${LOCATION}"
         },
         "myResourceGroupName": {
-            "value": "${AZURE_MY_RESOURCE_GROUP_NAME}"
+            "value": "${MY_RESOURCE_GROUP_NAME}"
         },
         "storeAppExists": {
             "value": "${SERVICE_STORE_RESOURCE_EXISTS=false}"
