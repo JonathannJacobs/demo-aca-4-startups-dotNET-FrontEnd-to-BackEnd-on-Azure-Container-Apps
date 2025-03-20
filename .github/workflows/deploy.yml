@@ -50,14 +50,14 @@ jobs:
       - name: Provision Azure Resources
         run: azd provision --no-prompt
         env:
-          AZURE_MY_RESOURCE_GROUP_NAME: ${{ env.AZURE_MY_RESOURCE_GROUP_NAME }}
-          AZURE_ENV_NAME: ${{ env.AZURE_ENV_NAME }}
-          AZURE_LOCATION: ${{ env.AZURE_LOCATION }}
-          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          MY_RESOURCE_GROUP_NAME: ${{ env.AZURE_MY_RESOURCE_GROUP_NAME }}
+          ENV_NAME: ${{ env.AZURE_ENV_NAME }}
+          LOCATION: ${{ env.AZURE_LOCATION }}
+          SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Deploy changes to Azure Container Apps
         run: azd deploy --no-prompt
         env:
-          AZURE_ENV_NAME: ${{ env.AZURE_ENV_NAME }}
-          AZURE_LOCATION: ${{ env.AZURE_LOCATION }}
-          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          ENV_NAME: ${{ env.AZURE_ENV_NAME }}
+          LOCATION: ${{ env.AZURE_LOCATION }}
+          SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
