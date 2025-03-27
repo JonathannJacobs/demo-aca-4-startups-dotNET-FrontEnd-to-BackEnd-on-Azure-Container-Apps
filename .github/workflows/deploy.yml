@@ -17,10 +17,10 @@ jobs:
       image: mcr.microsoft.com/azure-dev-cli-apps:latest
       
     env:
-      AZURE_CREDENTIALS: ${{ secrets.AzureSPN }}
+      AZURE_CREDENTIALS: ${{ secrets.AZURESPN }}
       AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-      AZURE_ENV_NAME: << YOUR ENV NAME >>    # Variable qui sera utilise pour la generation du nom du ressource group et pour tag des ressources
-      AZURE_LOCATION: << YOUR LOCATION >>    # Variable qui definie la region de deploiement ie: francecentral,swedencentral,westus,switzerlandnorth,germanywestcentral,spaincentral...
+      AZURE_ENV_NAME: preprod    # Variable qui sera utilise pour la generation du nom du ressource group et pour tag des ressources
+      AZURE_LOCATION: westus   # Variable qui definie la region de deploiement ie: francecentral,swedencentral,westus,switzerlandnorth,germanywestcentral,spaincentral...
 
     steps:
       - name: Checkout
