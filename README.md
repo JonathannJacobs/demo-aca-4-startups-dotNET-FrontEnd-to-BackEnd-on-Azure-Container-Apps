@@ -11,7 +11,7 @@ Dans la dernière étape du lab nous réaliserons un test de charge pour vous pe
 
 
 Le dépôt se compose des éléments suivants :  
-
+ 
 * `Store` - Un projet serveur Blazor représentant le frontend d'une boutique en ligne. L'interface utilisateur de la boutique affiche une liste de tous les produits de la boutique et leur statut d'inventaire associé.
 * `Products API` - Une API simple qui génère des noms de produits fictifs en utilisant le package open-source NuGet [Bogus](https://github.com/bchavez/Bogus).  
 * `Inventory API` - Une API simple qui fournit un nombre aléatoire pour un identifiant de produit donné. Les valeurs de chaque paire chaîne/entier sont stockées en cache mémoire pour être cohérentes entre les appels API.
